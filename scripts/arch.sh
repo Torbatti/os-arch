@@ -25,7 +25,6 @@ function check_list() {
   name=$1[@]
   a=("${!name}")
   echo -e -n " ${color[3]}$1:"
-  echo -n " "
   for i in "${a[@]}";
     do
       # Check If The Program is installed
@@ -159,4 +158,3 @@ declare -a progrraming_language=(
 )
 check_list progrraming_language
 
-echo ""
